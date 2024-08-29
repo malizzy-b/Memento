@@ -30,3 +30,8 @@ O padrão Memento é útil em situações onde:
 - **Jogo**: Salvar o estado do jogo (posição dos jogadores, itens, pontuação) para que o jogador possa carregar um save game.
 - **Editor de imagens**: Salvar o estado da imagem (camadas, filtros, modificações) para que o usuário possa voltar a uma versão anterior.
 - **Configurações**: Salvar as configurações de um aplicativo para que o usuário possa restaurar suas preferências.
+
+
+
+## Output
+![Output](memento.png)
