@@ -3,7 +3,7 @@
 O **Memento** é um padrão de projeto comportamental que permite salvar e restaurar o estado interno de um objeto, sem violar seu encapsulamento. Em outras palavras, ele permite "tirar um print" do estado atual de um objeto, para que você possa voltar a ele posteriormente, se necessário.
 
 ## Componentes
-![memento](memento.png)
+![memento](imagem_2024-08-28_222326508.png)
 
 O Memento trabalha com três atores principais:
 
