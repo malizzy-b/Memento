@@ -45,4 +45,4 @@ O padrão Memento é útil em situações onde:
 
 
 ## Output
-![Output](memento.png)
+![Output](images/memento.png)
