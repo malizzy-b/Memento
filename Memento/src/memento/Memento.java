@@ -9,13 +9,13 @@ package memento;
  * @author Marina
  */
 public class Memento {
-   private String state;
+   private String state; //atributo que armazena o estado do objeto que está sendo capturado pelo Memento
 
    public Memento(String state){
       this.state = state;
    }
 
-   public String getState(){
+   public String getState(){ //método que permite que outros objetos recuperem o estado armazenado no Memento.
       return state;
    }	
 }

@@ -11,13 +11,13 @@ import java.util.List;
  * @author Marina
  */
 public class CareTaker {
-   private List<Memento> mementoList = new ArrayList<Memento>();
+   private List<Memento> mementoList = new ArrayList<Memento>(); //lista os mementos criados do originator
 
-   public void add(Memento state){
+   public void add(Memento state){ //Armazena e adiciona o estado o memento à lista
       mementoList.add(state);
    }
 
-   public Memento get(int index){
+   public Memento get(int index){ //retorna o objeto Memento armazenado na lista mementoList na posição especificada pelo índice
       return mementoList.get(index);
    }
 }

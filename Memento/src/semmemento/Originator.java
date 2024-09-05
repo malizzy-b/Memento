@@ -22,18 +22,13 @@ public class Originator {
         return state;
     }
 
-    /**
-     * Salva o estado atual do Originator em uma lista de estados salvos.
-     */
+    //Salva o estado atual do Originator em uma lista de estados salvos.
     public void saveState() {
         savedStates.add(state);
     }
 
-    /**
-     * Restaura o estado do Originator para o estado na posição indicada.
-     *
-     * @param index Posição do estado a ser restaurado na lista de estados salvos.
-     */
+    //Restaura o estado do Originator para o estado na posição indicada.
+    //Verifica se o índice fornecido é válido, se for atualiza o estado do Originator com o estado armazenado na posição especificada na lista savedStates.
     public void restoreState(int index) {
         if (index >= 0 && index < savedStates.size()) {
             state = savedStates.get(index);

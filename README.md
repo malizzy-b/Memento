@@ -31,6 +31,17 @@ O padrão Memento é útil em situações onde:
 - **Editor de imagens**: Salvar o estado da imagem (camadas, filtros, modificações) para que o usuário possa voltar a uma versão anterior.
 - **Configurações**: Salvar as configurações de um aplicativo para que o usuário possa restaurar suas preferências.
 
+## Versão com Memento:
+- **Encapsulamento:** O Memento encapsula o estado do Originator, ocultando os detalhes internos.
+- **Imutabilidade:** O Memento é um objeto imutável, o que garante que o estado salvo não seja modificado acidentalmente.
+- **Desacoplamento:** O Originator não depende de como os Mementos são armazenados ou gerenciados.
+- **Flexibilidade:** O Memento permite diferentes estratégias de armazenamento e recuperação de estados (por exemplo, usando um Caretaker ou um histórico de versões).
+
+## Versão sem Memento:
+- **Sem encapsulamento**: O estado do Originator é armazenado diretamente em uma lista, expondo os detalhes da implementação.
+- **Estado mutável:** A lista de estados salvos é mutável, o que pode levar a modificações acidentais do estado salvo.
+- **Dependente da implementação:** O Originator depende da lista de estados salvos, o que dificulta a alteração do mecanismo de armazenamento.
+- **Menos flexível:** O mecanismo de armazenamento é mais rígido, limitado à lista interna.
 
 
 ## Output

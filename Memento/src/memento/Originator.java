@@ -11,19 +11,19 @@ package memento;
 public class Originator {
    private String state;
 
-   public void setState(String state){
+   public void setState(String state){ //Permitem a modificação e o acesso ao estado do Originator
       this.state = state;
    }
 
-   public String getState(){
+   public String getState(){ //ermite  o acesso ao estado atual do Originator
       return state;
    }
 
-   public Memento saveStateToMemento(){
+   public Memento saveStateToMemento(){ //Salva seu estado atual criando um novo objeto Memento e o inicializa com o estado atual do Originator
       return new Memento(state);
    }
 
-   public void getStateFromMemento(Memento memento){
+   public void getStateFromMemento(Memento memento){ //Atualiza o estado do originator
       state = memento.getState();
    }
 }
