@@ -34,7 +34,8 @@ O padrão Memento é útil em situações onde:
 Normalmente, o Memento Design Pattern será usado em situações em que algumas ações são desfazíveis, exigindo, portanto, o rollback para um estado anterior. No entanto, se o estado do Originator for pesado, usar o Memento Design Pattern pode levar a um processo de criação caro e ao aumento do uso de memória.
 
 
-## Diferenças
+
+## Diferenças Com e Sem o Memento
 - **Encapsulamento:** Com o memento, é possível ocultar os detalhes internos da implementação, já sem ele, o originator é armazenado diretamente em uma lista, expondo diretamente a implementação. 
 - **Imutabilidade:** Sem o memento, a lista de estados pode ser alterada a qualquer momento.
 - **Desacoplamento:** Sem o Memento, o Originator depende da lista de estados salvos, o que dificulta a alteração do mecanismo de armazenamento.
