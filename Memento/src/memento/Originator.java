@@ -9,7 +9,7 @@ package memento;
  * @author Marina
  */
 public class Originator {
-   private String state;
+   private String state; //atributo originator
 
    public void setState(String state){ //Permitem a modificação e o acesso ao estado do Originator
       this.state = state;
