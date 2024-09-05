@@ -15,7 +15,7 @@ public class Memento {
       this.state = state;
    }
 
-   public String getState(){ //método que permite que outros objetos recuperem o estado armazenado no Memento.
+   public String getState(){ // permite que outros objetos recuperem o estado armazenado no Memento.
       return state;
    }	
 }
